@@ -5,7 +5,6 @@ import { NAVS } from '../gql/allCharacters';
 import Head from 'next/head'
 import Layout, { siteTitle } from '../components/layout'
 import utilStyles from '../styles/utils.module.css'
-
 const IndexPage = () => {
 	const { loading, error, data } = useQuery(NAVS);
 	console.log('dataw 2', data)
