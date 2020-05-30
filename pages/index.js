@@ -7,7 +7,6 @@ import Layout, { siteTitle } from '../components/layout'
 import utilStyles from '../styles/utils.module.css'
 const IndexPage = () => {
 	const { loading, error, data } = useQuery(NAVS);
-	console.log('dataw 2', data)
 
 	if (error) return <h1>Error</h1>;
 	if (loading) return <h1>Loading...</h1>;

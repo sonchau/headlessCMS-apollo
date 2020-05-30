@@ -4,6 +4,7 @@ import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 import { Layout, Menu, Breadcrumb } from 'antd';
 import { UserOutlined, LaptopOutlined, NotificationOutlined } from '@ant-design/icons';
+import Navs from './navs';
 
 const { SubMenu } = Menu;
 const { Header, Content, Sider } = Layout;
@@ -29,8 +30,8 @@ export default function MainLayout({ children, home }) {
       </Header>
 
       <Layout style={{ padding: '3rem' }}>
-        <Sider width={255} className="site-layout-background">
-          <p>something</p>
+        <Sider width={400} className="site-layout-background">
+          <Navs />
         </Sider>
         <Layout style={{ padding: '0 24px 24px' }}>
           <Menu mode="horizontal" defaultSelectedKeys={['2']}>
